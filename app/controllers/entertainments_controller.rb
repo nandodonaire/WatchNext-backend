@@ -3,7 +3,7 @@ class EntertainmentsController < ProtectedController
 
   # GET /entertainments
   def index
-    @entertainments = Entertainment.all
+    @entertainments = current_user.entertainments.all
 
     render json: @entertainments
   end
@@ -15,7 +15,7 @@ class EntertainmentsController < ProtectedController
 
   # POST /entertainments
   def create
-    @entertainment = Entertainment.new(entertainment_params)
+    @entertainment = current_user.entertainments.build(entertainment_params)
 
     if @entertainment.save
       render json: @entertainment, status: :created, location: @entertainment
@@ -41,7 +41,8 @@ class EntertainmentsController < ProtectedController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_entertainment
-      @entertainment = Entertainment.find(params[:id])
+      @entertainment = current_user.entertainments.find(params[:id])
+      # current_user.entertainments.
     end
 
     # Only allow a trusted parameter "white list" through.

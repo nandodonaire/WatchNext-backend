@@ -1,3 +1,3 @@
 class EntertainmentSerializer < ActiveModel::Serializer
-  attributes :id, :title, :type, :genre, :synopsis, :where_to_watch
+  attributes :id, :title, :ent_type, :genre, :synopsis, :where_to_watch
 end

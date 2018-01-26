@@ -46,6 +46,6 @@ class EntertainmentsController < ProtectedController
 
     # Only allow a trusted parameter "white list" through.
     def entertainment_params
-      params.require(:entertainment).permit(:title, :type, :genre, :synopsis, :where_to_watch)
+      params.require(:entertainment).permit(:title, :ent_type, :genre, :synopsis, :where_to_watch)
     end
 end

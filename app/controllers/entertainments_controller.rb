@@ -1,4 +1,4 @@
-class EntertainmentsController < ApplicationController
+class EntertainmentsController < ProtectedController
   before_action :set_entertainment, only: [:show, :update, :destroy]
 
   # GET /entertainments

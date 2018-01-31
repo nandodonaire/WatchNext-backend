@@ -24,4 +24,9 @@ https://drive.google.com/file/d/113e_WclD1jxOoM5hcZie9yzqxsES-aNw/view?usp=shari
 
 Future enhancements:
 
-1) I'd like to be able to create more than one different resource on the api. 
+1) I'd like to be able to create more than one different resource on the api.
+
+Links to deployed sites:
+
+Frontend: https://nandodonaire.github.io/WatchNext-frontend/
+Backend: https://stark-dawn-66770.herokuapp.com/
